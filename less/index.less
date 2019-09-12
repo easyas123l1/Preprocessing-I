@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Ubuntu&display=swap');
 .spaceAround() {
 	display: flex;
 	justify-content: space-around;
@@ -15,6 +16,14 @@
 
 .color() {
 	color: darkorange;
+}
+
+.fontOne() {
+	font-family: 'Oswald', sans-serif;
+}
+
+.fontTwo() {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -152,4 +161,11 @@ section {
 		}
 	}
 
+}
+h1, p {
+	.fontOne();
+}
+
+h2, h3, h4, h5, h6 {
+	.fontTwo();
 }
