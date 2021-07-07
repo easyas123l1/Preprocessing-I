@@ -3,6 +3,28 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Ubuntu&display=swap');
+.spaceAround() {
+	display: flex;
+	justify-content: space-around;
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+}
+
+.color() {
+	color: darkorange;
+}
+
+.fontOne() {
+	font-family: 'Oswald', sans-serif;
+}
+
+.fontTwo() {
+	font-family: 'Ubuntu', sans-serif;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,6 +53,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	padding: 2%;
+	background-color: lightgray;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +78,94 @@ table {
 }
 
 html, body {
-    height: 100%;
+		height: 100%;
 }
 
+header {
+	width: 100%;
+	padding: 2%;
+	border-bottom: 1px black solid;
+	nav {
+		width: 60%;
+		.spaceAround();
+		a{
+			font-size: 1.5rem;
+			color: black;
+		}
+	}
+}
+
+h1 {
+	padding:3%;
+	font-weight: 700;
+	font-size: 2rem;
+	border-bottom: 1px black solid;
+	.center();
+}
+
+section {
+	padding: 2%;
+	border-bottom: 1px black solid;
+	h2 {
+		.color();
+		text-decoration: underline;
+		font-size: 1.8rem;
+	}
+	.skills {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 2%;
+		h3 {
+			font-weight: 700;
+			font-size: 1.6rem;
+		}
+		p {
+			align-items: center;
+			padding-top: 5%;
+			font-size: 1.3rem;
+		}
+	}
+	.experience {
+		padding-top: 2%;
+		h3 {
+			font-weight: 700;
+			font-size: 1.6rem;
+			margin-bottom: 3%;
+		}
+		p {
+			padding-bottom: 4%;
+			font-size: 1.3rem;
+		}
+	}
+	.education {
+		padding-top: 2%;
+		h3 {
+			font-weight: 700;
+			font-size: 1.6rem;
+			margin-bottom: 3%;
+		}
+		p {
+			padding-bottom: 4%;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+.about {
+	div {
+		div {
+			h3 {
+				border-bottom: 0.5px black solid;
+			}
+		}
+	}
+
+}
+h1, p {
+	.fontOne();
+}
+
+h2, h3, h4, h5, h6 {
+	.fontTwo();
+}
